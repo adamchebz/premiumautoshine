@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Auto Shine - Car Wash Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="autoshine logo.jpg" alt="Premium Auto Shine Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#book">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <button class="phone-button" onclick="window.location.href='tel:5142690261'">Call Now: 514-269-0261</button>
+                <button class="email-button" onclick="window.location.href='mailto:premium.autoshine.mtl@gmail.com'">Email: premium.autoshine.mtl@gmail.com</button>
+                <button class="share-button" onclick="sharePage()">Share Page</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Luxury car washing and high-end detailing</h2>
+            <p>See our skilled team wash and detail premium vehicles with precision, care, and showroom shine.</p>
+            <a href="#book" class="cta-button">Book Your Appointment</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://source.unsplash.com/featured/800x600/?person-washing-car,car-detailing" alt="Professional washing a luxury car">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="https://source.unsplash.com/featured/400x300/?car-interior-cleaning,detailer" alt="Interior Cleaning">
+                    <h3>Nettoyage intérieur complet</h3>
+                    <p>Complete interior cleaning for a spotless finish.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://source.unsplash.com/featured/400x300/?ozone-treatment,car-interior" alt="Ozone Treatment">
+                    <h3>Traitement ozone anti-odeur</h3>
+                    <p>Odor-eliminating ozone treatment.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://source.unsplash.com/featured/400x300/?carpet-cleaning,car-detailing" alt="Carpet Shampoo">
+                    <h3>Shampoing tapis & sièges</h3>
+                    <p>Deep cleaning for carpets and seats.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://source.unsplash.com/featured/400x300/?leather-seat-detailing,car-detailing" alt="Leather Treatment">
+                    <h3>Traitement cuir</h3>
+                    <p>Conditioning and protection for leather surfaces.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://source.unsplash.com/featured/400x300/?car-wash,high-end-car" alt="Exterior Wash">
+                    <h3>Lavage extérieur</h3>
+                    <p>Thorough exterior washing and drying.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://source.unsplash.com/featured/400x300/?car-protection,shine-detailing" alt="Premium Protection">
+                    <h3>Protection & finition premium</h3>
+                    <p>Premium protection and finishing touches.</p>
+                </div>
+            </div>
+            <p>And more based on personalized demands.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="https://source.unsplash.com/featured/600x400/?car-detailing-team,auto-detailing" alt="Our Team">
+                <p>At Premium Auto Shine, we are dedicated to providing top-notch car wash and detailing services. Our team of professionals uses the latest techniques and high-quality products to ensure your vehicle looks its best.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <div class="mission-content">
+                <p>To deliver exceptional car care services that exceed customer expectations, promoting vehicle longevity and customer satisfaction through personalized, premium treatments.</p>
+                <img src="https://source.unsplash.com/featured/600x400/?car-detailing,high-end-car-wash" alt="Detailing">
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="booking">
+        <div class="container">
+            <h2>Book Your Service</h2>
+            <form action="mailto:premium.autoshine.mtl@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="preferred-contact">Preferred Contact Method:</label>
+                <select id="preferred-contact" name="preferred-contact">
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                    <option value="Text">Text</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="details">Details of What You Need:</label>
+                <textarea id="details" name="details" placeholder="Describe the services you require..."></textarea>
+
+                <label for="service">Service Type:</label>
+                <select id="service" name="service">
+                    <option value="Nettoyage intérieur complet">Nettoyage intérieur complet</option>
+                    <option value="Traitement ozone anti-odeur">Traitement ozone anti-odeur</option>
+                    <option value="Shampoing tapis & sièges">Shampoing tapis & sièges</option>
+                    <option value="Traitement cuir">Traitement cuir</option>
+                    <option value="Lavage extérieur">Lavage extérieur</option>
+                    <option value="Protection & finition premium">Protection & finition premium</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Send Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="autoshine logo.jpg" alt="Premium Auto Shine Logo" class="footer-logo">
+            <p>&copy; 2026 Premium Auto Shine. All rights reserved.</p>
+            <p>Phone: <a href="tel:5142690261">514-269-0261</a> &bull; Email: <a href="mailto:premium.autoshine.mtl@gmail.com">premium.autoshine.mtl@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
